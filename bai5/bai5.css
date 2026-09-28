@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 680px;
+    width: 100%;
+}
+
+.company-title {
+    color: #C2185B;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.left-col {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.rose-img {
+    max-width: 170px;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.right-col {
+    flex: 1;
+}
+
+.section-title {
+    background-color: #FFC0CB;
+    color: #000000;
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.list-intro {
+    list-style: square;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 14.5px;
+    line-height: 1.8;
+}
+
+.list-contact {
+    list-style: circle;
+    padding-left: 20px;
+    font-size: 14.5px;
+    line-height: 1.8;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.copyright a {
+    color: #0000EE;
+    text-decoration: underline;
+    font-size: 14px;
+}

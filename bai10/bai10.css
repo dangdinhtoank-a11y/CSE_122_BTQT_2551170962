@@ -1,0 +1,162 @@
+/* Thiết lập chung */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Thẻ Form (Nền #FFFFFF, bóng đổ, bo góc 12px) */
+.contact-card {
+    width: 100%;
+    max-width: 650px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* Tiêu đề form (Nền #0f766e, chữ #FFFFFF, kèm mô tả nhỏ) */
+.form-header {
+    background-color: #0f766e;
+    color: #FFFFFF;
+    padding: 24px 30px;
+}
+
+.form-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.form-subtitle {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* Khung chứa các ô nhập */
+.contact-form {
+    padding: 30px;
+}
+
+/* Xếp 2 cột cho các ô nhập ngắn */
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 18px;
+}
+
+.form-row .form-group {
+    margin-bottom: 0;
+}
+
+/* Nhãn ô nhập (Chữ #334155, in đậm, cỡ nhỏ) */
+label {
+    color: #334155;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* Định dạng ô nhập text, email, tel, select, textarea (Viền #cbd5e1) */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #1e293b;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #0f766e;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Checkbox nhóm */
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #0075ff;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    color: #475569;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+/* Nhóm nút bấm */
+.button-group {
+    display: flex;
+    gap: 12px;
+}
+ 
+.btn {
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Nút Gửi liên hệ nổi bật (Màu #0f766e) */
+.btn-submit {
+    background-color: #0f766e;
+    color: #FFFFFF;
+}
+
+.btn-submit:hover {
+    opacity: 0.9;
+}
+
+/* Nút Nhập lại (Màu nhạt #e2e8f0) */
+.btn-reset {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+.btn-reset:hover {
+    background-color: #cbd5e1;
+}

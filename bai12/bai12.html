@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 12 — In lịch</title>
+    <link rel="stylesheet" href="bai12.css">
+</head>
+<body>
+
+    <div class="calendar-card">
+        <!-- Ô hiển thị lịch -->
+        <div class="calendar-box">
+            <div id="displayYear" class="year-text">2026</div>
+            <div id="displayMonth" class="month-text">Tháng 12</div>
+            <div id="displayDay" class="day-text">24</div>
+            <div id="displayWeekday" class="weekday-text">Thứ hai</div>
+        </div>
+
+        <!-- Lời chào theo buổi -->
+        <div id="displayGreeting" class="greeting-text">Chào buổi sáng!</div>
+
+        <!-- Form nhập liệu -->
+        <div class="input-form">
+            <div class="input-group">
+                <label for="inputDay">Ngày</label>
+                <input type="number" id="inputDay" value="24" min="1" max="31">
+            </div>
+            <div class="input-group">
+                <label for="inputMonth">Tháng</label>
+                <input type="number" id="inputMonth" value="12" min="1" max="12">
+            </div>
+            <div class="input-group">
+                <label for="inputYear">Năm</label>
+                <input type="number" id="inputYear" value="2026" min="1900" max="2100">
+            </div>
+            <button id="btnPrint" type="button">In<br>lịch</button>
+        </div>
+    </div> 
+
+    <script src="bai12.js"></script>
+</body>
+</html>

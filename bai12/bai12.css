@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('Anh/Bai12/Nen.gif') repeat;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} 
+
+.calendar-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    text-align: center;
+}
+
+.calendar-box {
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.year-text {
+    color: #C62828;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.month-text, .weekday-text {
+    color: #1565C0;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.day-text {
+    color: #C62828;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin: 5px 0;
+}
+
+.greeting-text {
+    color: #C62828;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.input-form {
+    border: 2px solid #1565C0;
+    border-radius: 12px;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 60px;
+    padding: 6px 4px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Nút In lịch */
+#btnPrint {
+    background-color: #536d7a;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1.2;
+    transition: background-color 0.2s;
+}
+
+#btnPrint:hover {
+    background-color: #3a4d57;
+}

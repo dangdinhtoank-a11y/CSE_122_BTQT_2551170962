@@ -1,0 +1,25 @@
+/* Tùy chỉnh màu Footer theo đề bài (#212529) */
+.footer {
+    background-color: #212529;
+}
+
+/* Đảm bảo hình ảnh trong Card hiển thị tỉ lệ chuẩn */
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Tùy chỉnh nhẹ cho khối Hero */
+.hero-section {
+    border: 1px solid #e9ecef;
+}
+
+/* Hiệu ứng hover cho thẻ Card */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}

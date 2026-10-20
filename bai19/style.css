@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #fafafa;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Khung chứa tổng thể */
+.container {
+    max-width: 900px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+/* Cột ảnh bên trái (~300px, xấp xỉ 1/3 chiều rộng) */
+.image-column {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+/* Ảnh đồi cát: có bóng đổ */
+.featured-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+/* Cột nội dung bên phải */
+.content-column {
+    flex: 1;
+}
+
+/* Tiêu đề: chữ #C9A227, đổ bóng chữ (text-shadow) */
+.main-title {
+    color: #C9A227;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Khối nội dung: viền nét đứt #E07B00, 2px dashed, bo góc */
+.info-box {
+    border: 2px dashed #E07B00;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.info-box p {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.info-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Các từ nhấn mạnh ("Phan Thiết", "Hòn Rơm"): chữ #C62828 in đậm */
+.highlight {
+    color: #C62828;
+    font-weight: bold;
+}
+ 

@@ -1,0 +1,35 @@
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-accordion-btn {
+    background-color: #e2eafc !important;
+    color: #2b2d42 !important;
+    font-size: 0.9rem;
+    box-shadow: none !important;
+}
+
+.custom-accordion-btn:not(.collapsed) {
+    background-color: #d0e1fd !important;
+    color: #1d3557 !important;
+}
+
+.accordion-button::after {
+    background-size: 1rem;
+}

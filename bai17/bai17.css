@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Thẻ form: nền #FFFFFF, viền #fed7aa, bo góc 12px */
+.form-card {
+    background-color: #ffffff;
+    border: 2px solid #fed7aa;
+    border-radius: 12px;
+    width: 420px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 25px rgba(194, 65, 12, 0.08);
+}
+
+/* Tiêu đề: chữ #c2410c */
+.form-title {
+    color: #c2410c;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.form-subtitle {
+    color: #6b7280;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #374151;
+    margin-bottom: 6px;
+}
+z
+/* Ô nhập mặc định */
+.form-group input {
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+/* Trạng thái lỗi: viền #dc2626, nền hồng nhạt */
+.form-group input.invalid {
+    border: 2px solid #dc2626 !important;
+    background-color: #fef2f2;
+}
+
+/* Trạng thái hợp lệ: viền #16a34a */
+.form-group input.valid {
+    border: 2px solid #16a34a !important;
+    background-color: #ffffff;
+}
+
+/* Thông báo hiển thị dưới ô */
+.message {
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: bold;
+    min-height: 16px;
+}
+
+/* Thông báo lỗi: chữ #dc2626 */
+.message.invalid {
+    color: #dc2626;
+}
+
+/* Thông báo hợp lệ: chữ #16a34a, dấu ✓ */
+.message.valid {
+    color: #16a34a;
+}
+
+/* Nút đăng ký: nền #c2410c, chữ #FFFFFF */
+.btn-submit {
+    width: 100%;
+    background-color: #c2410c;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+ 
+.btn-submit:hover {
+    background-color: #9a3412;
+}

@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcfbfa;
+    color: #333333;
+    line-height: 1.6;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Khung bài viết chính */
+.article-container {
+    background-color: #ffffff;
+    max-width: 750px;
+    width: 100%;
+    padding: 30px;
+}
+
+/* Tiêu đề bài viết: chữ màu #E65100, cỡ lớn */
+.article-title {
+    color: #E65100;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.article-subtitle {
+    color: #E65100;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Ảnh hoa: nổi bên phải (float: right), bo góc */
+.float-image {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    max-width: 240px;
+    border-radius: 8px;
+}
+
+.article-content {
+    margin-bottom: 30px;
+}
+
+.article-content p {
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+/* Chữ cái đầu đoạn văn (drop cap) màu #E65100 */
+.drop-cap-paragraph::first-letter {
+    color: #E65100;
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    line-height: 1;
+    margin-right: 8px;
+    margin-top: -2px;
+}
+
+/* Khối Hương vị: viền #2E7D32, nền #f4fbf4, bo góc */
+.side-box {
+    border: 2px solid #2E7D32;
+    background-color: #f4fbf4;
+    border-radius: 10px;
+    padding: 20px 25px;
+    clear: both;
+}
+
+/* Tiêu đề khối: chữ #2E7D32, in nghiêng */
+.box-title {
+    color: #2E7D32;
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Danh sách 2 cột bằng columns: 2 */
+.custom-list {
+    list-style: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    column-gap: 30px;
+}
+
+.custom-list li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    break-inside: avoid;
+}
+
+/* Icon đầu dòng danh sách sử dụng icon_list_c.gif (hoặc hình vuông nhỏ) */
+.custom-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    background: url('Anh/Bai18/icon_list_c.gif') no-repeat center center / contain;
+    /* Nếu không có ảnh icon, dòng dưới đây tạo dấu chấm xanh mỏng làm dự phòng */
+    background-color: #2E7D32; 
+} 

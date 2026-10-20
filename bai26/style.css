@@ -1,0 +1,34 @@
+/* Thiết lập font chữ & tùy chỉnh màu sắc */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #e9ecef;
+}
+
+/* Đổi màu xanh chuẩn theo thiết kế (#198754) */
+.bg-success, .btn-success {
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+}
+
+/* Đổi màu viền focus của các ô input cho hợp với tông xanh */
+.form-control:focus, .form-select:focus, .form-check-input:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+/* Nút Nhập lại */
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #ced4da;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #e9ecef;
+    color: #495057;
+    border-color: #ced4da;
+}

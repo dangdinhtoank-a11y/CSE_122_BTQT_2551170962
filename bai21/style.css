@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+/* Vùng 1: Banner */
+.banner {
+    background-color: #C62828;
+    background-image: url('Anh/Bai21/Nen_banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+}
+
+.banner .logo {
+    height: 40px;
+    width: auto;
+}
+
+.banner h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+    
+/* Bố cục chính sử dụng Flexbox */
+.main-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    align-items: flex-start;
+}
+
+/* Vùng 2: Menu dọc bên trái */
+.sidebar {
+    width: 200px;
+    flex-shrink: 0;
+    background: linear-gradient(to bottom, #C62828, #8E0000);
+    min-height: 400px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Vùng 3: Nội dung chính */
+.content {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+.content h2 {
+    color: #C62828;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+/* Hộp menu con vàng */
+.sub-menu {
+    background-color: #FFE082;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Khung nội dung bên trong */
+.inner-content {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Vùng 4: Cột quảng cáo */
+.ads {
+    width: 160px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ads img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+ 

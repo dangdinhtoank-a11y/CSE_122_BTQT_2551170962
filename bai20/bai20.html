@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 20 — Hiệu ứng ảnh với CSS Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SVG Filter dùng cho hiệu ứng Wave -->
+    <svg style="display: none;">
+        <defs>
+            <filter id="waveFilter">
+                <feTurbulence type="fractalNoise" baseFrequency="0.03 0.08" numOctaves="1" result="noise" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G" />
+            </filter>
+        </defs>
+    </svg>
+
+    <div class="container">
+        <!-- Khung chứa ảnh: nền #1c2226, bo góc 12px -->
+        <div class="image-card">
+            <img id="targetImg" src="Anh/Bai20/hoahong.gif" alt="Hoa hồng" class="filter-gray">
+            <div class="caption">Special For You</div>
+        </div>
+
+        <!-- Thanh nút bấm (13 nút hiệu ứng) -->
+        <div class="button-bar">
+            <button class="btn active" data-effect="gray">Gray</button>
+            <button class="btn" data-effect="xray">Xray</button>
+            <button class="btn" data-effect="invert">Invert</button>
+            <button class="btn" data-effect="fliph">FlipH</button>
+            <button class="btn" data-effect="flipv">FlipV</button>
+            <button class="btn" data-effect="glow">Glow</button>
+            <button class="btn" data-effect="shadow">Shadow</button>
+            <button class="btn" data-effect="boldshadow">Bold Shadow</button>
+            <button class="btn" data-effect="dropshadow">DropShadow</button>
+            <button class="btn" data-effect="blur">Blur</button>
+            <button class="btn" data-effect="wave">Wave</button>
+            <button class="btn" data-effect="mask">Mask</button>
+            <button class="btn" data-effect="alpha">Alpha</button>
+        </div>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
